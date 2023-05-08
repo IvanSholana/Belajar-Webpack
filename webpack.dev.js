@@ -10,4 +10,5 @@ module.exports = merge(config, {
     clean: true,
   },
   watch: true,
+  cache: true,
 });
