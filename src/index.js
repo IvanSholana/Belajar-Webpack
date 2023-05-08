@@ -9,5 +9,5 @@ const alertService = new AlertService();
 const calculatorService = new CalculatorService();
 const jokesService = new JokesService();
 
-alert("Hallo Ivan❤️");
+alert("Hallo Ivan hehe❤️");
 run(alertService, calculatorService, jokesService);
