@@ -1,7 +1,9 @@
-@import "bootstrap/scss/bootstrap";
 $danger: red;
 $background: lightblue;
 $primary: salmon;
+
+@import "bootstrap/scss/bootstrap";
+
 body {
   background-color: $primary;
 }
