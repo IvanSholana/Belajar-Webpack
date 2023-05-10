@@ -4,8 +4,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, "src/index.js"),
-    support: path.resolve(__dirname, "src/support.js"),
+    index: {
+      import: path.resolve(__dirname, "src/index.js"),
+      dependOn: "shared",
+    },
+    support: {
+      import: path.resolve(__dirname, "src/support.js"),
+      dependOn: "shared",
+    },
+    hello: path.resolve(__dirname, "src/Hello.js"),
+    shared: path.resolve(__dirname, "src/support.js"),
   },
   plugins: [
     new HtmlWebpackPlugin({
